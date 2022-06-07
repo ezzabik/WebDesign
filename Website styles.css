@@ -1,0 +1,135 @@
+.logo {
+    width: 600px;
+}
+.main-header {
+    background-color: #87423c;
+    size: 36px;
+}
+.navigation {
+    background-color:#87423c;
+}
+
+.navigation a {
+    color: #4d1d18;
+    text-decoration: none;
+    padding: 12px;
+    display: inline-block;
+}
+.navigation a:hover {
+    color: #555;
+    background-color: white;
+}
+body {
+    background-color: rgb(209, 209, 209);
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+}
+
+.banner {
+    background-image: url(graphics/BeachTide.jpg);
+    aspect-ratio: 25/4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+.banner h1 {
+    font-size: 250%;
+    color: white;
+    text-shadow: black 2px 2px 1px;
+}
+.social a {
+    text-decoration: none;
+    color: #87423c;
+    font-size: 200%;
+    margin: 0 20px;
+}
+.social {
+    text-align: center;
+}
+/* pseudo selector / class */
+.social a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin: 30px;
+}
+.card img {
+    max-width: 100%;
+}
+.card-image {
+    aspect-ratio: 7/2.5;
+    overflow: hidden;
+}
+/* selector for element that has both banner and contact classes */
+.banner.contact {
+    background-image: url("graphics/pavan-trikutam-71CjSSB83Wo-unsplash.jpg");
+}
+
+.content.contact {
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#contact-form {
+    grid-column-start: 2;
+    background-color: #ebe9e9;
+    padding: 30px 100px;
+    border-radius: 10px;
+}
+
+/* form styles */
+#contact-form > label {
+    display: block;
+    font-weight: bold;
+}
+
+#contact-form > input, 
+#contact-form > select,
+#contact-form > textarea {
+    min-width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: solid 1px #cccccc;
+}
+#contact-form > input:focus,
+#contact-form > select:focus,
+#contact-form > textarea:focus
+{
+    outline: rgb(0, 124, 87) solid 1px;
+}
+
+.checkbox, .radio {
+    padding: 15px 0;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
